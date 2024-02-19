@@ -12,32 +12,34 @@
 
     <meta name="description" content="Portfolio de Dante - Desarrollador web Junior">
 
-    <style>
-        h1 {
-            color: #6a00ff;
-            border-width: 3px;
-            border-style: solid;
-        }
-
-        body {
-            background-color: #1A1A1A;
-            color: #00e5ff;
-        }
-
-        a{
-            color: #ffb1ff;
-        }
-    </style>
+    <link rel="stylesheet" href="../curso-css/style.css">
 </head>
 <body>
     <header>
-        <h1>Portfolio de Dante</h1>
+        <div class="header-title">
+            <span>⭐⭐⭐</span>
+            <h1>Front-end Developer</h1>
+            <span> - Dante Tulintinati - </span>
+        </div>
+        <nav >
+            <ul class="navbar-menu">
+                <li>
+                    <a href="">Mis skills</a>
+                </li>
+                <li>  
+                    <a href="">sobre mi</a>
+                </li>
+                <li>
+                    <a href="">proyectos</a>
+                </li>
+                <li>
+                    <a href="#mi-form">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Formacion</a>
-    </nav>
+
 
     <main>
         <hr>
@@ -83,7 +85,7 @@
     </section>
     
     <section>
-        <h2>Formulario de contacto</h2>
+        <h2 id="mi-form">Formulario de contacto</h2>
         <form method="post" action="/">
             <fieldset>
                 <legend>Informacion personal</legend>
