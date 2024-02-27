@@ -1,6 +1,36 @@
+@import url(/curso-css/colours.css);
+
 html{
     scroll-behavior: smooth;
     box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-pc-w);
+    h2{
+        color: var(--text-pc);
+    }    
+    h3{
+        color: var(--text-pc);
+    }    
+}
+
+.header-title-fix{
+    width: 100%;
+    z-index: 10;
+    position: sticky;
+    top: 10px;
+    border-radius: 15px;
+    background-color: var(--bg-color-300);
 }
 
 .header-title{
@@ -22,24 +52,17 @@ html{
 }
 
 .header-title h1{
-    color: brown;
-    color: rgba(209, 191, 33, 0.897);
+    color: var(--header-text-me);
     margin: 0px;
     font-size:  185%;
     text-align: center;
 }
 
-body {
-    background-color: #1A1A1A;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #00e5ff;
-}
-
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.portfolio{
+    text-align: center;
+    font-size: 160%;
+    background-color: var(--bg-color-300);
+    color: var(--text-pc );
 }
 
 .navbar-menu {
@@ -54,17 +77,46 @@ header {
 
 .navbar-menu li a{
     text-decoration: none;
-    color: white;
+    color: var(--text-pc-w);
     text-transform: uppercase;
 }
 
 .navbar-menu a:hover{
-    color: #00e5ff;
+    color: var(--text-pc);
     cursor: pointer;
 }
 
+.navbar-button :hover{
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+.main-about-me {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: auto;
+    margin: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-me{
+    text-align: left;
+    border-radius: 25px;
+    background-color: var(--bg-color-300);
+    padding: 10px;
+    margin: 15px;
+}
+
+.main-img-about-me {
+    width: 70%;
+    height: auto;
+    border: var(--header-text-me) solid;
+    border-radius: 50%;
+}
+
 @media (max-width: 500px) {
-    header{
+    header {
         flex-direction: column;
     }
 }

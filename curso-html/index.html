@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../curso-css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header-title-fix">
         <div class="header-title">
             <span>⭐⭐⭐</span>
             <h1>Front-end Developer</h1>
@@ -24,16 +24,16 @@
         <nav >
             <ul class="navbar-menu">
                 <li>
-                    <a href="#about-me">sobre mi</a>
+                    <a class="navbar-button" href="#about-me">sobre mi</a>
                 </li>
                 <li>  
-                    <a href="#skills">Mis skills</a>
+                    <a class="navbar-button" href="#skills">Mis skills</a>
                 </li>
                 <li>
-                    <a href="#projects">proyectos</a>
+                    <a class="navbar-button" href="#projects">proyectos</a>
                 </li>
                 <li>
-                    <a href="#mi-form">Contacto</a>
+                    <a class="navbar-button" href="#mi-form">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -41,26 +41,39 @@
 
 
 
-    <main>
+<main>
+    <div class="portfolio">
         <hr>
         <p>Mi <strong>primer</strong> portfolio</p>
-    <hr>
-    <h2 id="about-me">Sobre mi</h2>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat sed reprehenderit, corporis eos mollitia officia sint, consequatur ad libero, quos aliquid. Soluta nesciunt nostrum in sit quod dolores aspernatur.
-    </p>
-    <hr>
-    <img 
-        title="Yo construyendo este portfolio"
-        width="400" 
-        src="\images\639159e05a242.jpeg" 
-        alt="Mago epico cocinando"
-    >
-    <aside>
-        <header>
-            <h3 id="skills">Mis Skills</h3>
-        </header>
-        <ul>
+        <hr>
+    </div>
+    <div  id="about-me" class="main-about-me">
+        <div class="about-me">
+            <h2>Sobre mi</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat sed reprehenderit, corporis eos mollitia officia sint, consequatur ad libero, quos aliquid. Soluta nesciunt nostrum in sit quod dolores aspernatur.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem saepe ipsam quae soluta, magnam eius. Praesentium maxime dicta cupiditate voluptatibus, commodi sapiente ducimus doloribus cumque natus sequi eaque expedita quasi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem veniam quasi recusandae culpa dignissimos voluptate itaque tempora quas, fugit distinctio, eum modi. Non quasi autem nostrum sapiente ab corrupti commodi.
+            </p>
+        </div>
+        <div>
+            <img 
+            class="main-img-about-me"
+            title="Yo construyendo este portfolio"
+            width="400" 
+            src="..\images\639159e05a242.jpeg" 
+            alt="Mago epico cocinando"
+            >
+        </div>
+    </div>
+        <aside>
+            <header>
+                <h3 id="skills">Mis Skills</h3>
+            </header>
+            <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
