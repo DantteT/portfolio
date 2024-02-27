@@ -31,8 +31,15 @@ body {
     top: 10px;
     border-radius: 15px;
     background-color: var(--bg-color-300);
+    border: solid var(--details);
 }
 
+hr{
+    border: none;
+    border-top: 3px double var(--details);
+    color: var(--details);
+    border-radius: 50%;
+}
 .header-title{
     display: flex;
     flex-direction: column;
@@ -86,11 +93,6 @@ body {
     cursor: pointer;
 }
 
-.navbar-button :hover{
-    background-color: var(--button-hover);
-    cursor: pointer;
-}
-
 .main-about-me {
     display: grid;
     grid-template-columns: auto auto;
@@ -113,6 +115,12 @@ body {
     height: auto;
     border: var(--header-text-me) solid;
     border-radius: 50%;
+}
+
+.navbar-button :hover{
+    background-color: red;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 @media (max-width: 500px) {
